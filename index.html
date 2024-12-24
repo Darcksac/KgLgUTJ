@@ -41,7 +41,7 @@
             padding: 2rem;
         }
 
-        .teams, .statistics {
+        .teams, .statistics, .ranking {
             margin: 2rem 0;
             padding: 1rem;
             border: 1px solid #ddd;
@@ -49,7 +49,7 @@
             background-color: white;
         }
 
-        .teams h2, .statistics h2 {
+        .teams h2, .statistics h2, .ranking h2 {
             margin-top: 0;
         }
 
@@ -60,6 +60,22 @@
 
         .teams li {
             margin: 0.5rem 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #0078d4;
+            color: white;
         }
 
         footer {
@@ -79,30 +95,72 @@
     <nav>
         <a href="#teams">Teams</a>
         <a href="#statistics">Statistics</a>
+        <a href="#ranking">Ranking</a>
     </nav>
 
     <div class="container">
         <section id="teams" class="teams">
             <h2>Teams</h2>
             <ul>
-                <li>Team 1</li>
-                <li>Team 2</li>
-                <li>Team 3</li>
-                <li>Team 4</li>
-                <li>Team 5</li>
-                <li>Team 6</li>
-                <li>Team 7</li>
-                <li>Team 8</li>
-                <li>Team 9</li>
-                <li>Team 10</li>
-                <li>Team 11</li>
-                <li>Team 12</li>
+                <li><a href="teams/team1/index.html">Team 1</a></li>
+                <li><a href="teams/team2/index.html">Team 2</a></li>
+                <li><a href="teams/team3/index.html">Team 3</a></li>
+                <li><a href="teams/team4/index.html">Team 4</a></li>
+                <li><a href="teams/team5/index.html">Team 5</a></li>
+                <li><a href="teams/team6/index.html">Team 6</a></li>
+                <li><a href="teams/team7/index.html">Team 7</a></li>
+                <li><a href="teams/team8/index.html">Team 8</a></li>
+                <li><a href="teams/team9/index.html">Team 9</a></li>
+                <li><a href="teams/team10/index.html">Team 10</a></li>
+                <li><a href="teams/team11/index.html">Team 11</a></li>
+                <li><a href="teams/team12/index.html">Team 12</a></li>
             </ul>
         </section>
 
         <section id="statistics" class="statistics">
             <h2>Statistics</h2>
             <p>Here you can find the tournament statistics such as scores, matches played, and rankings. Stay tuned for updates!</p>
+        </section>
+
+        <section id="ranking" class="ranking">
+            <h2>General Ranking</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Position</th>
+                        <th>Team</th>
+                        <th>Points</th>
+                        <th>Goals For</th>
+                        <th>Goals Against</th>
+                        <th>Matches Won</th>
+                        <th>Matches Lost</th>
+                        <th>Matches Drawn</th>
+                    </tr>
+                </thead>
+                <tbody contenteditable="true">
+                    <tr>
+                        <td>1</td>
+                        <td>Team 1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Team 2</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
         </section>
     </div>
 
